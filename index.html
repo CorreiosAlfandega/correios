@@ -1003,6 +1003,31 @@
                 padding: 15px;
             }
         }
+        
+        /* ===== CORREÇÕES ESPECÍFICAS PARA O BOTÃO PAGAR ===== */
+        @media (max-width: 767px) {
+            .pay-btn {
+                padding: 8px 12px !important;
+                font-size: 14px !important;
+                white-space: nowrap;
+                width: auto !important;
+                display: inline-block !important;
+            }
+            
+            .table-responsive {
+                overflow-x: auto;
+                display: block;
+                width: 100%;
+            }
+            
+            .result-table {
+                min-width: 600px;
+            }
+            
+            .result-table td:nth-child(5) {
+                min-width: 120px;
+            }
+        }
     </style>
 </head>
 <body>
