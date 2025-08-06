@@ -944,6 +944,65 @@
             font-size: 20px;
             color: #666;
         }
+        
+        /* ===== CORREÇÕES DE RESPONSIVIDADE ===== */
+        /* Ajustes para o container de pagamento em dispositivos móveis */
+        @media (max-width: 767px) {
+            .payment-container {
+                max-height: 90vh;
+                overflow-y: auto;
+                padding: 15px;
+            }
+            
+            .payment-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .payment-title {
+                font-size: 18px;
+                word-break: break-word;
+                padding-right: 40px;
+            }
+            
+            .close-payment {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .amount {
+                font-size: 28px;
+            }
+            
+            .qrcode-container {
+                padding: 15px;
+            }
+            
+            #qrcode {
+                max-width: 100%;
+                padding: 15px;
+            }
+            
+            .btn {
+                padding: 12px;
+                font-size: 16px;
+            }
+            
+            .kiwify-checkout {
+                flex-direction: column;
+            }
+            
+            .info-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .package-info {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1403,7 +1462,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
